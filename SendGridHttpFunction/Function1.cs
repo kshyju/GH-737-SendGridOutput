@@ -27,10 +27,10 @@ namespace SendGridHttpFunction
 
 
             var message = new SendGridMessage();
-            message.SetFrom(new EmailAddress("connectshyju@gmail.com", "SK"));
-            message.SetGlobalSubject("Check SendGrid output");
-            message.AddTo(new EmailAddress("shyju.mail@gmail.com", "My To Address"));
-            message.AddCc(new EmailAddress("shyju@techiesweb.net", "My CC Address"));
+            message.SetFrom(new EmailAddress("foo@gmail.com", "Foo"));
+            message.SetGlobalSubject("Check SendGrid output with STJ converters");
+            message.AddTo(new EmailAddress("bar@gmail.com", "My To Address"));
+            message.AddCc(new EmailAddress("foo-brother@gmail.net", "My CC Address"));
             message.AddContent(MimeType.Text, "Mail to check SendGrid output from Azure Function with String return type");
 
             _logger.LogInformation($"Send message {message.Subject} to {message.Personalizations.First().Tos.First().Email}");
