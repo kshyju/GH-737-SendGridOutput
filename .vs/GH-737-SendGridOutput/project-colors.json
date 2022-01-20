@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "30d29a7a-ae66-4991-beaf-1270d2b34d00": {
+      "ProjectGuid": "30d29a7a-ae66-4991-beaf-1270d2b34d00",
+      "DisplayName": "GH-737-SendGridOutput",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
